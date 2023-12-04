@@ -1,5 +1,5 @@
-#install.packages("ggplot2")
-#install.packages("gridExtra")
+install.packages("ggplot2")
+install.packages("gridExtra")
 
 library(ggplot2)
 library(gridExtra)
@@ -28,6 +28,7 @@ random_walk  <- function (n_steps) {
   
 }
 
+set.seed(999)
 data1 <- random_walk(500)
 
 plot1 <- ggplot(aes(x = x, y = y), data = data1) +
@@ -40,16 +41,5 @@ plot1 <- ggplot(aes(x = x, y = y), data = data1) +
   
   ylab("y-coordinate")
 
-data2 <- random_walk(500)
+plot1
 
-plot2 <- ggplot(aes(x = x, y = y), data = data2) +
-  
-  geom_path(aes(colour = time)) +
-  
-  theme_bw() +
-  
-  xlab("x-coordinate") +
-  
-  ylab("y-coordinate")
-
-grid.arrange(plot1, plot2, ncol=2)
