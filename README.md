@@ -19,7 +19,7 @@ The filename is the same with the original random walk.R file uploaded to the re
 
 -- Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
 
-ce9d0083c5d3a23ec66b17757dbf2bd6f8ef814c
+![Commit Changes](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/blob/ce9d0083c5d3a23ec66b17757dbf2bd6f8ef814c/question-4-code/random_walk.R)
 
 ## Instructions
 
