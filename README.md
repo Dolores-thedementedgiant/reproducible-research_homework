@@ -22,6 +22,7 @@ The filename is the same with the original random walk.R file uploaded to the re
 Click this link: ![Commit Changes](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/commit/ce9d0083c5d3a23ec66b17757dbf2bd6f8ef814c) 
 
 Or look at this incomplete image: 
+![Screen Shot 2023-12-05 at 08 57 11](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/683a4234-fa11-4678-adef-4e1e369128b4)
 
 ## Q5: (30 points) In 2014, Cui, Schlub and Holmes published an article in the Journal of Virology (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form , where is the virion volume in nm3 and is the genome length in nucleotides.
 
