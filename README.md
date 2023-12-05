@@ -20,7 +20,7 @@ Random seed is a value input given to the pseudorandom number generator algorith
 
 -- Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)
 
-The filename is the same with the original random walk.R file uploaded to the repo
+ [Code for reproducible simulation of Brownian motion](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/blob/main/question-4-code/random_walk.R)
 
 -- Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
 
