@@ -24,13 +24,28 @@ Click this link: ![Commit Changes](https://github.com/Dolores-thedementedgiant/r
 Or look at this incomplete image: 
 ![Screen Shot 2023-12-05 at 08 57 11](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/683a4234-fa11-4678-adef-4e1e369128b4)
 
-## Q5: (30 points) In 2014, Cui, Schlub and Holmes published an article in the Journal of Virology (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form , where is the virion volume in nm3 and is the genome length in nucleotides.
+## Q5: (30 points) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \beta L^{\alpha}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides.
 
 --Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have? (3 points)
 
 The table has 33 rows and 13 columns
 
 --What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
+
+Log transformations can be used to fit a linear model to this data.
+
+--Find the exponent (alpha) and scaling factor (beta) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant?Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
+
+The exponent alpha = 1.52 and scaling factor beta = 10^(7.07). See below for how they are obtained.
+![solving for alpha and beta](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/50d16ffd-abee-4513-8a7f-8c7092431bd7)
+
+p-value for slope = 6.44e-10
+
+p-value for intercept = 2.28e-10
+
+They are statistically significant because both p-values are smaller than 0.05.
+
+--Write the code to reproduce the figure shown below. (10 points)
 
 
 
