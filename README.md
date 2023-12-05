@@ -26,18 +26,19 @@ Or look at this incomplete image:
 
 ## Q5: (30 points) In 2014, Cui, Schlub and Holmes published an article in the *Journal of Virology* (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form **$`V = \beta L^{\alpha}`$**, where $`V`$ is the virion volume in nm<sup>3</sup> and $`L`$ is the genome length in nucleotides.
 
---Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have? (3 points)
+-- Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have? (3 points)
 
 The table has 33 rows and 13 columns
 
---What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
+-- What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
 
 Log transformations can be used to fit a linear model to this data.
 
---Find the exponent (alpha) and scaling factor (beta) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant?Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
+-- Find the exponent (alpha) and scaling factor (beta) of the allometric law for dsDNA viruses and write the p-values from the model you obtained, are they statistically significant?Compare the values you found to those shown in Table 2 of the paper, did you find the same values? (10 points)
 
-The exponent alpha = 1.52 and scaling factor beta = 10^(7.07). See below for how they are obtained.
-![solving for alpha and beta](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/50d16ffd-abee-4513-8a7f-8c7092431bd7)
+The exponent alpha = 1.52 and scaling factor beta = 1182. See below for how they are obtained.
+
+![Solving for beta and alpha](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/6777f351-fa58-45f9-a879-d09d20ca0ef3)
 
 p-value for slope = 6.44e-10
 
@@ -45,9 +46,26 @@ p-value for intercept = 2.28e-10
 
 They are statistically significant because both p-values are smaller than 0.05.
 
---Write the code to reproduce the figure shown below. (10 points)
+The values of alpha and beta in the paper are 1.52 and 1182 respectively. They are identical to the values I obtained from my model output.
 
+(Code of this linear model is uploaded to this repo.)
 
+-- Write the code to reproduce the figure shown below. (10 points)
+
+(Code used to generate this figure is uploaded to this repo.) The image from my code is attched below:
+
+![Linear regression virus](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/a249225d-a757-4279-82a2-d5420fbe4524)
+
+## Bonus (10 points) 
+-- Explain the difference between reproducibility and replicability in scientific research. How can git and GitHub be used to enhance the reproducibility and replicability of your work? what limitations do they have? (e.g. check the platform protocols.io).
+
+Reproducibility is the ability to reproduce statistical results and conclusions using the same set of data as the original author of the paper while replicability is the ability to reach similar conclusions using a new set of raw data collected independently from the data used in previous researches.
+
+Git (the version control system) and github (the web-based platform that allows code storing and sharing) enhance reproducibility by allowing others to access your code used to reach conclusions without changing the original copy owned by the author. This means that other people who want to reproduce data processing and statistical tests on their own machine can do so easily without having to email the author for code or try to write the code themselves, motivating others in the research community to verify the result. It can also prevent harmful practices such as p-hacking because the author is conscious that the code is publically available so the data analysis can be challenged any moment. 
+
+Additionally, git and github also enhance replicability because the platform allows others to build upon the original code of the author. In this way, people can adapt the same data analysis to a new raw dataset to see if the conclusion still holds. Since github also supports collaboration, it allows physically separated researchers to access the same data and code. This is potentially useful for data collection and standardized processing in multiple locations.
+
+However, there are several limitations and drawbacks for using github in the wider scientific community. Firstly, it has complicated design and numerous features that perplex a beginner user. Considering that it is not a standard practice in the scientific community to use github for public access of code, researchers that have not used it before might be discouraged from starting on github. Secondly, if the code from your project contains content protected by intellectual property law, the code can not be made available on a public access platform like github. Thirdly, github keeps all past history of commit changes which might make it difficult for user to look up the change they care about. Fourthly, simply using github and version control do not automatically guarantee the same environment for code execution on your machine. Extra steps like making sure packages required are installed and loaded properly are needed for code to re-run.
 
 ## Instructions
 
