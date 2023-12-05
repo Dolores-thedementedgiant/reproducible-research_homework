@@ -59,7 +59,7 @@ The values of alpha and beta in the paper are 1.52 and 1182 respectively. They a
 
 [Code to reproduce this figure](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/blob/main/Question%205%20model%20and%20plot%20code.R)
 
-The image from my code is attched below:
+The image from my code is attached below:
 
 ![Linear regression virus](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/a249225d-a757-4279-82a2-d5420fbe4524)
 
