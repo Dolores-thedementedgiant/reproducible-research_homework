@@ -19,6 +19,7 @@ The next step in a random walk does not depend on the past step, it only depends
 Random seed is a value input given to the pseudorandom number generator algorithm at the start of simulation that initializes the random walk. The algorithm then produces a sequence of numbers that are seemingly random but are actually based on the initial random seed value. The same random seed gives rise to identical simulations if number of steps remains constant. By setting random seeds, random walk simulations can be reproduced because the algorithm will produce the same sequence of numbers each time the code is executed. This can be useful when random walks are applied to reproducible simulations such as Brownian motion. 
 
 -- Edit the script to make a reproducible simulation of Brownian motion. Commit the file and push it to your forked reproducible-research_homework repo. (10 points)
+
 The filename is the same with the original random walk.R file uploaded to the repo
 
 -- Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
