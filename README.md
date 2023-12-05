@@ -53,11 +53,13 @@ They are statistically significant because both p-values are smaller than 0.05.
 
 The values of alpha and beta in the paper are 1.52 and 1182 respectively. They are identical to the values I obtained from my model output.
 
-(Code of this linear model is uploaded to this repo.)
+[Code of linear model](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/blob/main/Question%205%20model%20and%20plot%20code.R)
 
 -- Write the code to reproduce the figure shown below. (10 points)
 
-(Code used to generate this figure is uploaded to this repo.) The image from my code is attched below:
+[Code to reproduce this figure](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/blob/main/Question%205%20model%20and%20plot%20code.R)
+
+The image from my code is attched below:
 
 ![Linear regression virus](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/assets/148791070/a249225d-a757-4279-82a2-d5420fbe4524)
 
