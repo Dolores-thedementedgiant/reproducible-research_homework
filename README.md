@@ -1,6 +1,6 @@
 # Reproducible research: version control and R
 
-# Q4.
+## Q4: (30 points) Sometimes we are interested in modelling a process that involves randomness. A good example is Brownian motion. We will explore how to simulate a random process in a way that it is reproducible:
 
 -- A script for simulating a random_walk is provided in the question-4-code folder of this repo. Execute the code to produce the paths of two random walks. What do you observe? (10 points)
 
@@ -19,7 +19,19 @@ The filename is the same with the original random walk.R file uploaded to the re
 
 -- Go to your commit history and click on the latest commit. Show the edit you made to the code in the comparison view (add this image to the README.md of the fork). (5 points)
 
-![Commit Changes](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/commit/ce9d0083c5d3a23ec66b17757dbf2bd6f8ef814c)
+Click this link: ![Commit Changes](https://github.com/Dolores-thedementedgiant/reproducible-research_homework/commit/ce9d0083c5d3a23ec66b17757dbf2bd6f8ef814c) 
+
+Or look at this incomplete image: 
+
+## Q5: (30 points) In 2014, Cui, Schlub and Holmes published an article in the Journal of Virology (doi: https://doi.org/10.1128/jvi.00362-14) showing that the size of viral particles, more specifically their volume, could be predicted from their genome size (length). They found that this relationship can be modelled using an allometric equation of the form , where is the virion volume in nm3 and is the genome length in nucleotides.
+
+--Import the data for double-stranded DNA (dsDNA) viruses taken from the Supplementary Materials of the original paper into Posit Cloud (the csv file is in the question-5-data folder). How many rows and columns does the table have? (3 points)
+
+The table has 33 rows and 13 columns
+
+--What transformation can you use to fit a linear model to the data? Apply the transformation. (3 points)
+
+
 
 ## Instructions
 
